@@ -1,3 +1,16 @@
 body {
 	background-color: midnightblue;
 }
+
+#parent_container {
+	display: flexbox;
+	width: 270px;
+}
+
+.playingcards {
+	display: inline-block;
+	background-color: red;
+	height: 40px;
+	width: 25px;
+	margin: 10px 10px;
+}
