@@ -25,11 +25,11 @@ arrayOfShapeTags = [
 	'Red_Circle',
 	'Red_Square',
 	'Red_Triangle',
-	'Red_Diamond'
+	'Red_Diamond',
 	'Blue_Circle',
 	'Blue_Square',
 	'Blue_Triangle',
-	'Blue_Diamond'
+	'Blue_Diamond',
 	'Orange_Circle',
 	'Orange_Square',
 	'Orange_Triangle',

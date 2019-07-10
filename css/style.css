@@ -8,6 +8,32 @@ h1 {
 	color: white;
 }
 
+#game_start {
+	margin: auto;
+	width: 415px;
+	height: 470px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgb(34,193,195);
+	background: -moz-radial-gradient(circle, rgba(34,193,195,1) 35%, rgba(253,187,45,1) 100%);
+	background: -webkit-radial-gradient(circle, rgba(34,193,195,1) 35%, rgba(253,187,45,1) 100%);
+	background: radial-gradient(circle, rgba(34,193,195,1) 35%, rgba(253,187,45,1) 100%);
+	
+}
+
+#game_start div {
+	height: 26px;
+	width: 125px;
+	background-color: grey;
+	text-align: center;
+	border: 1px solid white;
+	font-family: 'Barriecito', cursive;
+	font-size: 24px;
+	color: white;
+
+}
+
 #parent_container {
 	margin: auto;
 	display: flexbox;
@@ -28,4 +54,12 @@ h1 {
 	width: 45px;
 	margin: 12px 12px;
 	color: red;
+}
+
+span:hover {
+	-moz-transform: scale(1.3);
+	-webkit-transform: scale(1.3);
+	-o-transform: scale(1.3);
+	-ms-transform: scale(1.3);
+
 }
