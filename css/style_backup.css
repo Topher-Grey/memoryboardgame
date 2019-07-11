@@ -9,7 +9,7 @@ h1 {
 }
 main {
 	display: grid;
-	grid-template-columns: 2fr 1fr;
+	grid-template-columns: 3fr 1fr;
 }
 
 #game_start {
@@ -74,12 +74,10 @@ span:hover {
 	border: 3px solid white;
 	width: 150px;
 	height: 175px;
-	grid-column: 2;
-	grid-row: 1;
 }
 
 #timer_start_button {
 	border: 1px solid white;
-	width: 100px;
+	width: 50px;
 	height: 50px;
 }
