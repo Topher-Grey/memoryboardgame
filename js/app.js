@@ -2,7 +2,6 @@
 
 const game = {
 
-	// Generate Variables for game
 	flippedCard1: 0,
 	flippedCard2: 0,
 	selectingCard1: true,
@@ -99,13 +98,31 @@ const game = {
 		$('#score').text(`Score: ${this.score}`);
 	},
 	displayWin(){
+		$('main').hide();
+		$div = $('<div></div>').attr('id', 'endBox');
+		$div.text(`Congratulations! You Matched All The Squares! Your final score: ${this.score}`);
+		// $div.append('<img id="star" src="images/star.jpg />');
+		$('body').append($div);
+		$img = $('<img/>').attr('src', 'images/star.png')
+		$img.css({
+			'width': '200px',
+			'height': '200px',
+		});
+		$('body').append($img);
 
+	},
+	displayEnding() {
+		$('main').hide();
+		$div = $('<div></div>').attr('id', 'endBox');
+		$div.text(`Game Over! Your final score: ${this.score}`);
+		$('body').append($div);
 	},
 	setTimer(){
 		const timer = setInterval(() => {
         	this.time --;
-        	if(this.time === 0){
+        	if(this.time == 0){
           		clearInterval(timer);
+          		this.displayEnding();
         	}
       		$('#timer').text(`Time: ${this.time}s`);
 
@@ -164,7 +181,7 @@ $('#parent_container').on("click", function (e) {
 			game.arrayofCards[game.flippedCard2].cardOn = false;
 			game.updateScore(10, 'add');
 			game.remainingPairs--;
-			console.log(game.remainingPairs);
+			console.log(`Remaining pairs: ${game.remainingPairs}`);
 			if(game.remainingPairs == 0){
 				game.displayWin();
 			}
